@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    }
+
+h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #ffda79;
+    place-content: center;
+}
+
+.container{
+    padding: 0px 20px;
+    min-width: 600px;
+    height: 100px;
+    background-color: #f7f1e3;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+label{
+    min-width: 250px;
+    height: 36px;
+    column-gap: 10px;   
+    position: relative;  
+      
+}
+
+label::before{
+    content: "";
+    width: 22px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    pointer-events: none;
+}
+
+label::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    z-index: 2;
+    height: 0px;
+    width: 0px;
+    border-style: solid;
+    border-width: 6.9px 4px 0 4px;
+    border-color: #aaa transparent transparent transparent;
+    pointer-events: none;
+}
+
+label select{
+    min-width: 250px;
+    height: 36px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 0 30px 0 10px;
+    border: 2px solid #fc5c65;
+    border-radius: 4px;
+    color: black;
+    margin: 0 5px 5px 0;
+    font-weight: 500;
+    font-size: 14px;    
+}
+
+option{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+select option:checked{
+    font-weight: bold;
+}
+
